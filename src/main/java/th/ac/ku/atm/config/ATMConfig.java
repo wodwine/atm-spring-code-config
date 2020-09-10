@@ -9,7 +9,7 @@ public class ATMConfig {
 
     @Bean
     public DataSource dataSource() {
-        return new DataSourceFile();
+        return new DataSourceFile("customers.txt");
     }
 
     @Bean
