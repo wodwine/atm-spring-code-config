@@ -1,8 +1,5 @@
 package th.ac.ku.atm;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -13,8 +10,7 @@ public class DataSourceFile implements DataSource {
 
     private String filename;
 
-    @Autowired
-    public DataSourceFile(@Value("${filename}") String filename) {
+    public DataSourceFile(String filename) {
         this.filename = filename;
     }
 
